@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
+    padding:0;
     font-family: 'Pretendard';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -15,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Pretendard';
+
   }
   h1 {
     margin: 0;
