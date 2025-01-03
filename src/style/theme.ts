@@ -10,6 +10,8 @@ export type HeadingSize = 'large' | 'medium' | 'small';
 
 export type ButtonSize = 'primary';
 
+export type AvatarSize = 'large' | 'medium';
+
 export type ButtonSchema = 'primary';
 
 interface Theme {
@@ -30,6 +32,13 @@ interface Theme {
     [key in ButtonSchema]: {
       color: string;
       bg: string;
+    };
+  };
+  avatarSize: {
+    [key in AvatarSize]: {
+      width: string;
+      height: string;
+      borderRadius: string;
     };
   };
 }
@@ -59,6 +68,18 @@ export const defaultTheme: Theme = {
     primary: {
       color: '#ffffff',
       bg: '#213555',
+    },
+  },
+  avatarSize: {
+    large: {
+      width: '9.375rem',
+      height: '9.375rem',
+      borderRadius: '50%',
+    },
+    medium: {
+      width: '2.8125rem',
+      height: '2.8125rem',
+      borderRadius: '50%',
     },
   },
 };
