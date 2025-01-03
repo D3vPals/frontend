@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { AvatarProps } from './Avatar';
 
 export const AvatarContainer = styled.div<Omit<AvatarProps, 'image'>>`
-  width: ${({ theme, size }) => theme.avatarSize[size].width};
-  height: ${({ theme, size }) => theme.avatarSize[size].height};
-  border-radius: ${({ theme, size }) => theme.avatarSize[size].borderRadius};
+  width: ${({ size }) => size};
+  height: ${({ size }) => size};
+  border-radius: '50%';
   img {
-    width: ${({ theme, size }) => theme.avatarSize[size].width};
-    height: ${({ theme, size }) => theme.avatarSize[size].height};
+    width: ${({ size }) => size};
+    height: ${({ size }) => size};
   }
 `;

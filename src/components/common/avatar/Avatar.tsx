@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react';
 import * as S from './Avatar.styled';
-import { AvatarSize } from '../../../style/theme';
 
 export interface AvatarProps {
-  size: AvatarSize;
+  size: string;
   image: string | ReactNode;
 }
 
